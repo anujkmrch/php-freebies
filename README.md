@@ -8,11 +8,15 @@ To create new connection write
 
 <?php 
 $hostname = 'locahost'; // it can be the ip address of the system
+
 $port = 80; // it may be any port, number, default port for apache web is 80
+
 $domain = 'codebloop.com';
+
 $path = '/';
 
 $requester = new Curl_Connection($hostname,$port,$domain,$path); 
+
 $fields = array('say'=>"hello");
 
 $response = $request->get($fields);
@@ -31,9 +35,6 @@ $response = $request->post($fields);
  
  // or you can see any response
 ?>
-
-## Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
 
 ## Installation
 Just download this file into your project, create connection and Provide code examples and explanations of how to get the project.
